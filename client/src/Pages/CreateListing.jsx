@@ -17,7 +17,7 @@ export default function CreateListing() {
     imageUrls: [],
     name: "",
     description: "",
-    address: "",  
+    address: "",
     type: "rent",
     bedrooms: 1,
     bathrooms: 1,
@@ -85,7 +85,7 @@ export default function CreateListing() {
     });
   };
 
-  const  handleRemoveImage = (index) => {
+  const handleRemoveImage = (index) => {
     setFormData({
       ...formData,
       imageUrls: formData.imageUrls.filter((_, i) => i !== index),
